@@ -1,0 +1,70 @@
+*, ::before::after{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  :root{
+    --main-radius: 5px;
+    --main-padding: 5px
+  }
+  .Container{
+    
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 1.2fr 1.8fr 0.8fr;
+    grid-template-areas: 
+    "nav nav nav nav nav"
+    "img img img img img"
+    "main main main main main"
+    "footer footer footer footer footer";
+    grid-gap: 10px;
+       
+  }
+  nav{
+    background-color: black;
+    grid-area: nav;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+  }
+  .img{
+    background-color: white;
+    grid-area: img;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+  }
+  main{
+    background-color: white;
+    grid-area: main;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+  }
+  
+  footer{
+    background-color: white ;
+    grid-area: footer;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+  }
+  
+  @media only screen and (max-width: 550px) {
+    .Container{
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.1fr 1fr 1.5fr 0.5fr;
+      grid-area: "nav"
+      "img"
+      "main"
+      "footer";
+    }
+    
+  }
+  
+ 
+
+ 
+ 
+ 

@@ -1,0 +1,35 @@
+
+
+.wrapper{
+  width: 100% !important;
+  height: 100% !important;
+  top: 0;
+  left: 0;
+}
+.titre{
+  padding: 30px;
+  text-align: center;
+  font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.paragraph{
+  padding:  20px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+}
+
+
+  @media only screen and (max-width:550px) {
+    .paragraph {
+       font-size: 2vw;
+    }
+    .titre{
+        font-size: 8vw;
+    }
+    
+  }
+ 
+  
